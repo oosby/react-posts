@@ -1,0 +1,41 @@
+@import '../../style/_colors.scss';
+
+.box {
+  width: 33.3333%;
+  display: flex;
+
+  .box-inner {
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid $grey-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &:nth-child(3n + 1) {
+    .box-inner{
+      margin-left: 0;
+    }
+  }
+
+  &:nth-child(3n + 3) {
+    .box-inner {
+      margin-right: 0;
+    }
+  }
+
+  .header {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .user-name {
+    font-size: .875rem;
+    margin: 6px 0 0 0;
+  }
+}
